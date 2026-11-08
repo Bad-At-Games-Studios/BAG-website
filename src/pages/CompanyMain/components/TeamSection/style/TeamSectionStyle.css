@@ -1,4 +1,5 @@
 .team-section {
+  display: none;
   padding: 6%;
   background-color: var(--bag-color-gray-20);
 }
