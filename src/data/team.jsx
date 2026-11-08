@@ -1,4 +1,4 @@
-import portrait from "../assets/images/team/portrait.webp";
+import portrait from "../assets/images/team/Portrait.webp";
 
 export const teamData = [
   {
