@@ -1,0 +1,491 @@
+.project-section .card-cnt,
+.all-game-section .card-cnt {
+  width: 100%;
+  min-width: 0;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: var(--fs14);
+  cursor: pointer;
+  position: relative;
+  grid-column: auto / span 5;
+}
+
+.project-section .card-cnt::before,
+.all-game-section .card-cnt::before {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 105%;
+  top: -2.5%;
+  left: -2.5%;
+  border-radius: 1rem;
+  padding: 0.5%;
+  background: linear-gradient(
+    to top,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.5) 30%,
+    transparent 55%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.project-section .card-cnt:hover::before,
+.all-game-section .card-cnt:hover::before {
+  opacity: 1;
+}
+
+.project-section .card-cnt .image,
+.all-game-section .card-cnt .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32svh;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1.4rem;
+}
+
+.project-section .card-cnt .image img,
+.all-game-section .card-cnt .image img {
+  object-fit: cover;
+}
+
+.project-section .card-cnt .status,
+.all-game-section .card-cnt .status {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs14);
+  width: 100%;
+}
+
+.project-section .card-cnt .status .genres,
+.all-game-section .card-cnt .status .genres {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px var(--fs14);
+  width: 100%;
+}
+
+.project-section .card-cnt .status .genres li,
+.all-game-section .card-cnt .status .genres li {
+  color: var(--bag-color-red-100);
+  border-radius: var(--bag-fs-1);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.project-section .card-cnt .status .genres li span,
+.all-game-section .card-cnt .status .genres li span {
+  background-color: var(--bag-color-red-100);
+  border-radius: 50%;
+  height: 4px;
+  width: 4px;
+}
+
+.project-section .card-cnt .status .platform,
+.all-game-section .card-cnt .status .platform {
+  display: flex;
+  align-items: center;
+  gap: var(--fs14);
+  width: 100%;
+}
+
+.project-section .card-cnt .status .platform li,
+.all-game-section .card-cnt .status .platform li {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.project-section .card-cnt .info,
+.all-game-section .card-cnt .info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--bag-fs-4);
+  margin-bottom: 4%;
+}
+
+.project-section .card-cnt .info .title,
+.all-game-section .card-cnt .info .title {
+  color: var(--bag-color-white-100);
+  font-weight: 500;
+  font-size: var(--fs38);
+  text-transform: capitalize;
+}
+
+.project-section .card-cnt .info .dec,
+.all-game-section .card-cnt .info .dec {
+  color: var(--bag-color-white-100);
+  font-weight: 500;
+  font-size: var(--fs22);
+}
+
+.project-section .card-cnt .project-btn,
+.all-game-section .card-cnt .project-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-section .card-cnt .project-btn .coming-soon-btn,
+.all-game-section .card-cnt .project-btn .coming-soon-btn,
+.project-section .card-cnt .project-btn .play-btn,
+.all-game-section .card-cnt .project-btn .play-btn,
+.project-section .card-cnt .project-btn .video-btn,
+.all-game-section .card-cnt .project-btn .video-btn {
+  text-align: center;
+  color: var(--bag-color-white-100);
+  background-color: transparent;
+  border-radius: var(--fs10);
+  padding: 4% 0%;
+  font-size: var(--fs18);
+  font-weight: 500;
+  border: 1px solid var(--bag-color-white-100);
+}
+
+.project-section .card-cnt .project-btn .play-btn:hover,
+.all-game-section .card-cnt .project-btn .play-btn:hover {
+  color: var(--bag-color-red-100);
+  background-color: var(--bag-color-white-100);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-section .card-cnt .project-btn .coming-soon-btn,
+.all-game-section .card-cnt .project-btn .coming-soon-btn {
+  width: 100%;
+}
+.project-section .card-cnt .project-btn .play-btn,
+.all-game-section .card-cnt .project-btn .play-btn,
+.project-section .card-cnt .project-btn .video-btn,
+.all-game-section .card-cnt .project-btn .video-btn {
+  width: 48%;
+}
+
+.project-section .card-cnt .project-btn .play-btn.full-width,
+.all-game-section .card-cnt .project-btn .play-btn.full-width {
+  width: 100%;
+}
+
+.project-section .card-cnt .project-btn .video-btn,
+.all-game-section .card-cnt .project-btn .video-btn {
+  border: none;
+  background-color: var(--bag-color-red-100);
+  color: var(--bag-color-white-100);
+}
+
+.project-section .card-cnt .project-btn .video-btn:hover,
+.all-game-section .card-cnt .project-btn .video-btn:hover {
+  background-color: var(--bag-color-white-100);
+  color: var(--bag-color-red-100);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-section .card-cnt .project-btn .coming-soon-btn,
+.all-game-section .card-cnt .project-btn .coming-soon-btn {
+  color: var(--bag-color-gray-100);
+  border: 1px solid var(--bag-color-gray-100);
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+  .project-section .card-cnt,
+  .all-game-section .card-cnt {
+    border-radius: 2rem;
+    gap: var(--fs14);
+    grid-column: auto / span 4;
+  }
+}
+
+@media (max-width: 992px) {
+  .project-section .card-cnt,
+  .all-game-section .card-cnt {
+    width: 100%;
+    border-radius: 1.5rem;
+    gap: var(--fs24);
+    grid-column: auto / span 6;
+  }
+
+  .project-section .card-cnt::before,
+  .all-game-section .card-cnt::before {
+    width: 105%;
+    height: 105%;
+    top: -2.5%;
+    left: -2.5%;
+    border-radius: 1rem;
+    padding: 0.5%;
+  }
+
+  .project-section .card-cnt .image,
+  .all-game-section .card-cnt .image {
+    width: 100%;
+    height: 42svh;
+    border-radius: 1.4rem;
+  }
+
+  .project-section .card-cnt .status,
+  .all-game-section .card-cnt .status {
+    gap: var(--fs24);
+    width: 100%;
+  }
+
+  .project-section .card-cnt .status .genres,
+  .all-game-section .card-cnt .status .genres {
+    gap: 4px var(--fs14);
+    width: 100%;
+  }
+
+  .project-section .card-cnt .status .genres li,
+  .all-game-section .card-cnt .status .genres li {
+    gap: 4px;
+    font-size: var(--fs22);
+  }
+
+  .project-section .card-cnt .status .genres li span,
+  .all-game-section .card-cnt .status .genres li span {
+    height: 4px;
+    width: 4px;
+  }
+
+  .project-section .card-cnt .status .platform,
+  .all-game-section .card-cnt .status .platform {
+    gap: var(--fs14);
+  }
+
+  .project-section .card-cnt .status .platform li,
+  .all-game-section .card-cnt .status .platform li {
+    width: 18px;
+    height: 18px;
+  }
+
+  .project-section .card-cnt .info,
+  .all-game-section .card-cnt .info {
+    gap: var(--bag-fs-4);
+    margin-bottom: 2%;
+  }
+
+  .project-section .card-cnt .info .title,
+  .all-game-section .card-cnt .info .title {
+    font-size: var(--fs70);
+    line-height: 1;
+  }
+
+  .project-section .card-cnt .info .dec,
+  .all-game-section .card-cnt .info .dec {
+    font-size: var(--fs22);
+  }
+
+  .project-section .card-cnt .project-btn .coming-soon-btn,
+  .all-game-section .card-cnt .project-btn .coming-soon-btn,
+  .project-section .card-cnt .project-btn .play-btn,
+  .all-game-section .card-cnt .project-btn .play-btn,
+  .project-section .card-cnt .project-btn .video-btn,
+  .all-game-section .card-cnt .project-btn .video-btn {
+    border-radius: var(--fs10);
+    padding: 4% 0%;
+    font-size: var(--fs26);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-section .card-cnt,
+  .all-game-section .card-cnt {
+    width: 100%;
+    border-radius: 1.5rem;
+    gap: var(--fs24);
+    grid-column: auto / span 6;
+  }
+
+  .project-section .card-cnt .image,
+  .all-game-section .card-cnt .image {
+    width: 100%;
+    border-radius: 1.4rem;
+  }
+
+  .project-section .card-cnt::before,
+  .all-game-section .card-cnt::before {
+    width: 105%;
+    height: 105%;
+    top: -2.5%;
+    left: -2.5%;
+    border-radius: 1rem;
+    padding: 0.5%;
+  }
+
+  .project-section .card-cnt .status,
+  .all-game-section .card-cnt .status {
+    gap: var(--fs24);
+    width: 100%;
+  }
+
+  .project-section .card-cnt .status .genres,
+  .all-game-section .card-cnt .status .genres {
+    gap: 4px var(--fs14);
+    width: 100%;
+  }
+
+  .project-section .card-cnt .status .genres li,
+  .all-game-section .card-cnt .status .genres li {
+    gap: 4px;
+    font-size: var(--fs24);
+  }
+
+  .project-section .card-cnt .status .genres li span,
+  .all-game-section .card-cnt .status .genres li span {
+    height: 4px;
+    width: 4px;
+  }
+
+  .project-section .card-cnt .status .platform,
+  .all-game-section .card-cnt .status .platform {
+    gap: var(--fs14);
+  }
+
+  .project-section .card-cnt .status .platform li,
+  .all-game-section .card-cnt .status .platform li {
+    width: 18px;
+    height: 18px;
+  }
+
+  .project-section .card-cnt .info,
+  .all-game-section .card-cnt .info {
+    gap: var(--bag-fs-4);
+    margin-bottom: 2%;
+  }
+
+  .project-section .card-cnt .info .title,
+  .all-game-section .card-cnt .info .title {
+    font-size: var(--fs44);
+    line-height: 1;
+  }
+
+  .project-section .card-cnt .info .dec,
+  .all-game-section .card-cnt .info .dec {
+    font-size: var(--fs22);
+  }
+
+  .project-section .card-cnt .project-btn .coming-soon-btn,
+  .all-game-section .card-cnt .project-btn .coming-soon-btn,
+  .project-section .card-cnt .project-btn .play-btn,
+  .all-game-section .card-cnt .project-btn .play-btn,
+  .project-section .card-cnt .project-btn .video-btn,
+  .all-game-section .card-cnt .project-btn .video-btn {
+    border-radius: var(--fs10);
+    padding: 4% 0%;
+    font-size: var(--fs28);
+  }
+}
+
+@media (max-width: 576px) {
+  .project-section .card-cnt,
+  .all-game-section .card-cnt {
+    width: 100%;
+    border-radius: 1.5rem;
+    gap: var(--fs24);
+    grid-column: auto / span 6;
+  }
+
+  .project-section .card-cnt .image,
+  .all-game-section .card-cnt .image {
+    width: 100%;
+    border-radius: 1.4rem;
+  }
+
+  .project-section .card-cnt::before,
+  .all-game-section .card-cnt::before {
+    width: 105%;
+    height: 105%;
+    top: -2.5%;
+    left: -2.5%;
+    border-radius: 1rem;
+    padding: 0.5%;
+  }
+
+  .project-section .card-cnt .status,
+  .all-game-section .card-cnt .status {
+    gap: var(--fs24);
+    width: 100%;
+  }
+
+  .project-section .card-cnt .status .genres,
+  .all-game-section .card-cnt .status .genres {
+    gap: 4px var(--fs14);
+    width: 100%;
+  }
+
+  .project-section .card-cnt .status .genres li,
+  .all-game-section .card-cnt .status .genres li {
+    gap: 4px;
+    font-size: var(--fs24);
+  }
+
+  .project-section .card-cnt .status .genres li span,
+  .all-game-section .card-cnt .status .genres li span {
+    height: 4px;
+    width: 4px;
+  }
+
+  .project-section .card-cnt .status .platform,
+  .all-game-section .card-cnt .status .platform {
+    gap: var(--fs14);
+  }
+
+  .project-section .card-cnt .status .platform li,
+  .all-game-section .card-cnt .status .platform li {
+    width: 18px;
+    height: 18px;
+  }
+
+  .project-section .card-cnt .info,
+  .all-game-section .card-cnt .info {
+    gap: var(--bag-fs-4);
+    margin-bottom: 2%;
+  }
+
+  .project-section .card-cnt .info .title,
+  .all-game-section .card-cnt .info .title {
+    font-size: var(--fs64);
+    line-height: 1;
+  }
+
+  .project-section .card-cnt .info .dec,
+  .all-game-section .card-cnt .info .dec {
+    font-size: var(--fs22);
+  }
+
+  .project-section .card-cnt .project-btn .coming-soon-btn,
+  .all-game-section .card-cnt .project-btn .coming-soon-btn,
+  .project-section .card-cnt .project-btn .play-btn,
+  .all-game-section .card-cnt .project-btn .play-btn,
+  .project-section .card-cnt .project-btn .video-btn,
+  .all-game-section .card-cnt .project-btn .video-btn {
+    border-radius: var(--fs10);
+    padding: 3% 0%;
+    font-size: var(--fs28);
+  }
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 340px) {
+}

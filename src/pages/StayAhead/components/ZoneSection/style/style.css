@@ -1,0 +1,191 @@
+.sa-zone-section {
+  width: 100%;
+  background-image: url("../../../../../assets/images/stayahead/bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 4% 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sa-zone-section .content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+}
+
+.sa-zone-section .content-container .content-float {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sa-zone-section .content-container .content-float h1 {
+  color: var(--bag-color-gray-40);
+  font-size: var(--fs36);
+  font-weight: 400;
+}
+
+.sa-zone-section .content-container .blue-content,
+.sa-zone-section .content-container .red-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sa-zone-section .content-container .blue-content .image,
+.sa-zone-section .content-container .red-content .image {
+  width: 30px;
+  height: 30px;
+}
+
+.sa-zone-section .content-container .blue-content .title,
+.sa-zone-section .content-container .red-content .title {
+  font-size: 7vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.sa-zone-section .content-container .blue-content .title {
+  color: var(--bag-color-loading-100);
+}
+
+.sa-zone-section .content-container .red-content .title {
+  color: var(--bag-color-white-100);
+}
+
+.sa-zone-section .content-container .blue-content .dec,
+.sa-zone-section .content-container .red-content .dec {
+  font-size: var(--fs22);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--bag-color-gray-20);
+}
+
+.sa-zone-section .eyebro {
+  display: flex;
+  align-items: center;
+  gap: var(--fs12);
+}
+
+.sa-zone-section .eyebro .line {
+  width: 2%;
+  height: 2px;
+  background: var(--bag-color-loading-100);
+}
+
+.sa-zone-section .eyebro p {
+  color: var(--bag-color-loading-100);
+  font-size: var(--fs14);
+  line-height: 1;
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .sa-zone-section {
+    padding: 0% 12%;
+  }
+
+  .sa-zone-section .content-container .content-float h1 {
+    font-size: var(--fs56);
+  }
+
+  .sa-zone-section .content-container .blue-content,
+  .sa-zone-section .content-container .red-content {
+    gap: 2rem;
+  }
+
+  .sa-zone-section .content-container .blue-content .image,
+  .sa-zone-section .content-container .red-content .image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sa-zone-section .content-container .blue-content .title,
+  .sa-zone-section .content-container .red-content .title {
+    font-size: 10vw;
+  }
+
+  .sa-zone-section .content-container .blue-content .dec,
+  .sa-zone-section .content-container .red-content .dec {
+    font-size: var(--fs28);
+    line-height: 1;
+    width: 50%;
+  }
+
+  .sa-zone-section .eyebro {
+    gap: var(--fs12);
+  }
+
+  .sa-zone-section .eyebro .line {
+    width: 2%;
+    height: 2px;
+  }
+
+  .sa-zone-section .eyebro p {
+    font-size: var(--fs22);
+  }
+}
+
+@media (max-width: 768px) {
+  .sa-zone-section .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 4rem;
+  }
+
+  .sa-zone-section .content-container .blue-content,
+  .sa-zone-section .content-container .red-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .sa-zone-section .content-container .content-float {
+    top: 50%;
+    left: 10%;
+  }
+
+  .sa-zone-section .content-container .blue-content .dec,
+  .sa-zone-section .content-container .red-content .dec {
+    font-size: var(--fs28);
+    line-height: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 400px) {
+  .sa-zone-section .content-container .blue-content .image,
+  .sa-zone-section .content-container .red-content .image {
+    width: 24px;
+    height: 24px;
+  }
+  .sa-zone-section .content-container .blue-content .title,
+  .sa-zone-section .content-container .red-content .title {
+    font-size: 14vw;
+  }
+}
+
+@media (max-width: 340px) {
+}

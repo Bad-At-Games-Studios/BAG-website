@@ -1,0 +1,81 @@
+.all-game-section {
+  background-color: var(--bag-color-black-100);
+  width: 100%;
+  padding: 8% 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.all-game-section .back-cnt {
+  width: 100%;
+  text-align: start;
+}
+
+.all-game-section .back-cnt h2 {
+  color: var(--bag-color-red-100);
+  font-weight: 500;
+  font-size: var(--fs18);
+  cursor: pointer;
+}
+
+.all-game-section .all-game-grid {
+  display: grid;
+  grid-auto-flow: dense;
+  align-items: stretch;
+  justify-items: stretch;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 2rem 1rem;
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+  .all-game-section .all-game-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .all-game-section {
+    padding: 9% 6%;
+    gap: 1rem;
+  }
+
+  .all-game-section .back-cnt h2 {
+    font-size: var(--fs28);
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .all-game-section {
+    padding: 12% 6%;
+    gap: 1rem;
+  }
+
+  .all-game-section .all-game-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  .all-game-section {
+    padding: 18% 6%;
+    gap: 1rem;
+  }
+
+  .all-game-section .back-cnt h2 {
+    font-size: var(--fs32);
+  }
+}
+
+@media (max-width: 340px) {
+}

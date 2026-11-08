@@ -1,0 +1,27 @@
+.count-section {
+  background-color: var(--bag-color-red-100);
+  padding: 4% 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.count-section .count-cnt {
+  width: 30%;
+}
+
+.count-section .count-cnt .big-text {
+  color: var(--bag-color-white-100);
+  font-size: var(--fs80);
+  font-weight: 600;
+}
+
+.count-section .count-cnt .title {
+  border-top: 2px solid var(--bag-color-black-100);
+  padding-top: 2%;
+  color: var(--bag-color-black-100);
+  font-size: var(--fs18);
+  text-transform: uppercase;
+  font-weight: 600;
+}

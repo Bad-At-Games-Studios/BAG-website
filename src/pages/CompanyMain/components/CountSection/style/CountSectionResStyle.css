@@ -1,0 +1,78 @@
+@import "./CountSectionStyle.css";
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .count-section .count-cnt .big-text {
+    font-size: 8vw;
+  }
+
+  .count-section .count-cnt .title {
+    padding-top: 2%;
+    font-size: var(--fs22);
+  }
+}
+
+@media (max-width: 768px) {
+  .count-section {
+    padding: 4% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .count-section .count-cnt {
+    width: 30%;
+  }
+
+  .count-section .count-cnt .big-text {
+    font-size: 8vw;
+  }
+
+  .count-section .count-cnt .title {
+    padding-top: 2%;
+    font-size: var(--fs22);
+  }
+}
+
+@media (max-width: 576px) {
+  .count-section {
+    padding: 4% 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--fs22);
+  }
+
+  .count-section .count-cnt {
+    width: 100%;
+  }
+
+  .count-section .count-cnt .big-text {
+    font-size: 14vw;
+  }
+
+  .count-section .count-cnt .title {
+    padding-top: 2%;
+    font-size: var(--fs24);
+  }
+}
+
+@media (max-width: 400px) {
+  .count-section .count-cnt .big-text {
+    font-size: 20vw;
+  }
+}
+
+@media (max-width: 340px) {
+}

@@ -1,0 +1,33 @@
+.notcompatible-section {
+  background: #142015;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 32, 21, 1) 0%,
+    rgba(27, 43, 24, 1) 50%,
+    rgba(11, 17, 14, 1) 100%
+  );
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 340px) {
+}

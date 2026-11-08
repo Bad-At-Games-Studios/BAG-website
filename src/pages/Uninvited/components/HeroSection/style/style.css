@@ -1,0 +1,247 @@
+.ui-section {
+  width: 100%;
+  height: 100svh;
+  background-image: url("../../../../../assets/images/uninvited/hero.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0% 12%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nominee-cnt {
+  position: absolute;
+  top: 34%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 8%;
+}
+
+.nominee-cnt img {
+  transform: rotate(40deg);
+}
+
+.ui-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.ui-section .eyebro {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ui-section .eyebro .text {
+  color: var(--bag-color-loading-100);
+  font-size: var(--fs18);
+  position: relative;
+}
+
+.ui-section .eyebro .brand {
+  color: var(--bag-color-gray-20);
+  font-size: var(--fs18);
+}
+
+.ui-section .content {
+  position: relative;
+  z-index: 1;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ui-section .content .title {
+  font-size: 8vw;
+  color: var(--bag-color-gray-20);
+  line-height: 1;
+  font-weight: 500;
+}
+
+.ui-section .content .title span {
+  color: var(--bag-color-white-100);
+}
+
+.ui-section .content .subtitle {
+  font-size: var(--fs24);
+  color: var(--bag-color-gray-70);
+  width: 30%;
+}
+
+.ui-section .content .dec {
+  font-size: var(--fs20);
+  color: var(--bag-color-gray-70);
+  width: 30%;
+}
+
+.ui-section .content .btn {
+  background-color: var(--bag-color-white-100);
+  border-radius: 10px;
+  padding: 1% 2%;
+  text-align: center;
+  white-space: nowrap;
+  font-size: var(--fs18);
+  font-weight: 500;
+  color: var(--bag-color-red-100);
+  cursor: pointer;
+}
+
+.ui-section .content .btn:hover {
+  color: var(--bag-color-white-100);
+  background-color: var(--bag-color-red-100);
+}
+
+.ui-section .features {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs10);
+  color: var(--bag-color-gray-20);
+  font-size: var(--fs14);
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .ui-section {
+    width: 100%;
+    height: 100svh;
+    background-image: url("../../../../../assets/images/uninvited/hero.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0% 12%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nominee-cnt {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 10%;
+  }
+
+  .ui-section .eyebro .text {
+    font-size: var(--fs28);
+  }
+
+  .ui-section .content {
+    margin-top: 2%;
+    gap: 2rem;
+  }
+
+  .ui-section .content .title {
+    font-size: 10vw;
+  }
+
+  .ui-section .content .subtitle {
+    font-size: var(--fs34);
+    width: 30%;
+  }
+
+  .ui-section .content .dec {
+    font-size: var(--fs26);
+    width: 30%;
+  }
+
+  .ui-section .content .btn {
+    border-radius: 16px;
+    padding: 1.5% 4%;
+    font-size: var(--fs32);
+  }
+
+  .ui-section .features {
+    margin-top: 4%;
+    gap: var(--fs10);
+    font-size: var(--fs22);
+  }
+}
+
+@media (max-width: 768px) {
+  .ui-section .eyebro .text {
+    font-size: var(--fs24);
+  }
+  .nominee-cnt {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 8%;
+  }
+}
+
+@media (max-width: 576px) {
+  .nominee-cnt {
+    top: 36%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    width: 12%;
+  }
+  .ui-section .content .subtitle {
+    font-size: var(--fs34);
+    width: 100%;
+  }
+
+  .ui-section .content .title {
+    font-size: 14vw;
+  }
+
+  .ui-section .content .dec {
+    width: 100%;
+  }
+
+  .ui-section .content .btn {
+    font-size: var(--fs28);
+  }
+}
+
+@media (max-width: 400px) {
+  .nominee-cnt {
+    top: 36%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 14%;
+  }
+  .ui-section .content .title {
+    font-size: 22vw;
+  }
+}
+
+@media (max-width: 340px) {
+  .nominee-cnt {
+    top: 37%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 14%;
+  }
+}

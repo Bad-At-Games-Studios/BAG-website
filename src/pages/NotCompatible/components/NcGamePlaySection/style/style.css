@@ -1,0 +1,120 @@
+.nc-game-play-section {
+  padding: 4% 12%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nc-game-play-section .eyebro p {
+  color: var(--bag-color-white-100);
+  font-size: var(--fs14);
+  line-height: 1;
+}
+
+.nc-game-play-section .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.nc-game-play-section .content .left {
+  width: 30%;
+}
+
+.nc-game-play-section .content .left h1 {
+  color: var(--bag-color-gray-20);
+  font-size: var(--fs70);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.nc-game-play-section .content .right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nc-game-play-section .content .right .dec {
+  color: var(--bag-color-gray-20);
+  font-size: var(--fs30);
+  line-height: 1;
+}
+
+.nc-game-play-section .content .right .sub-dec {
+  color: var(--bag-color-white-100);
+  font-size: var(--fs16);
+  line-height: 1;
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .nc-game-play-section {
+    padding: 4% 12%;
+    gap: 2rem;
+  }
+
+  .nc-game-play-section .eyebro p {
+    font-size: var(--fs26);
+  }
+
+  .nc-game-play-section .content .left {
+    width: 40%;
+  }
+
+  .nc-game-play-section .content .left h1 {
+    font-size: var(--fs80);
+  }
+
+  .nc-game-play-section .content .right {
+    width: 50%;
+    gap: 1rem;
+  }
+
+  .nc-game-play-section .content .right .dec {
+    font-size: var(--fs36);
+  }
+
+  .nc-game-play-section .content .right .sub-dec {
+    font-size: var(--fs22);
+  }
+}
+
+@media (max-width: 768px) {
+  .nc-game-play-section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: var(--fs36);
+  }
+
+  .nc-game-play-section .content .left {
+    width: 100%;
+  }
+
+  .nc-game-play-section .content .right {
+    width: 100%;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nc-game-play-section .eyebro p {
+    font-size: var(--fs20);
+  }
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 340px) {
+}

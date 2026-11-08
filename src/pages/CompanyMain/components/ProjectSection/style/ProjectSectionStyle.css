@@ -1,0 +1,52 @@
+.project-section {
+  padding: 6%;
+  background-color: var(--bag-color-black-100);
+}
+
+.project-section .project-section-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs14);
+}
+
+.project-section .project-section-top .eyebrow {
+  color: var(--bag-color-red-100);
+  font-size: var(--fs16);
+  font-weight: 600;
+}
+
+.project-section .project-section-top .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.project-section .project-section-top .title-wrapper .title {
+  font-size: var(--fs70);
+  color: var(--bag-color-white-100);
+  font-weight: 500;
+  width: 60%;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.project-section .project-section-top .title-wrapper .view-all {
+  color: var(--bag-color-white-100);
+  font-weight: 500;
+  font-size: var(--fs18);
+}
+
+.project-section .project-section-top .title-wrapper .view-all:hover {
+  color: var(--bag-color-red-100);
+}
+
+.project-section .project-section-bottom {
+  display: grid;
+  align-items: stretch;
+  justify-items: stretch;
+  grid-template-columns: repeat(20, minmax(0, 1fr));
+  gap: 2rem;
+  box-sizing: border-box;
+  grid-auto-rows: auto;
+}

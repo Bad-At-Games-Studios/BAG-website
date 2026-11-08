@@ -1,0 +1,67 @@
+@import "./ProjectSectionStyle.css";
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+  .project-section .project-section-bottom {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .project-section {
+    padding: 6%;
+  }
+
+  .project-section .project-section-top {
+    gap: var(--fs14);
+  }
+
+  .project-section .project-section-top .eyebrow {
+    font-size: var(--fs24);
+  }
+
+  .project-section .project-section-top .title-wrapper {
+    margin-bottom: 4%;
+  }
+
+  .project-section .project-section-top .title-wrapper .title {
+    font-size: 8vw;
+    width: 100%;
+  }
+
+  .project-section .project-section-top .title-wrapper .view-all {
+    font-size: var(--fs28);
+  }
+
+  .project-section .project-section-bottom {
+    gap: 2rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .project-section .project-section-top .title-wrapper .title {
+    font-size: 14vw;
+    width: 100%;
+  }
+
+  .project-section .project-section-bottom {
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 340px) {
+}

@@ -1,0 +1,39 @@
+# BADAT Games
+
+> BADAT Games is a game development company website featuring information about its games, team, company, news, and related legal policies.
+
+## Website
+
+- https://www.badatgames.net/ — BADAT Games home page and company overview
+- https://www.badatgames.net/game — All games developed or published by BADAT Games
+- https://www.badatgames.net/team — BADAT Games team members
+- https://www.badatgames.net/news — Latest BADAT Games news and updates
+
+## Games
+
+- https://www.badatgames.net/game — Browse all BADAT Games
+- https://www.badatgames.net/aboutgame/:name — Detailed information about an individual game
+
+## News
+
+- https://www.badatgames.net/news — Browse BADAT Games news and announcements
+- https://www.badatgames.net/aboutnews/:id — Detailed information about a specific news article
+
+## Company
+
+- https://www.badatgames.net/ — BADAT Games company information
+- https://www.badatgames.net/team — Information about the BADAT Games team
+
+## Legal
+
+- https://www.badatgames.net/tc — Terms and Conditions
+- https://www.badatgames.net/pp — Privacy Policy
+
+## Notes
+
+BADAT Games provides information about its games, company, team, and news through the website.
+
+Dynamic routes use the following patterns:
+
+- `/aboutgame/:name` — Individual game pages
+- `/aboutnews/:id` — Individual news pages

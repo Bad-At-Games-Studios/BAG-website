@@ -1,0 +1,70 @@
+.team-section .card-cnt,
+.all-team-section .card-cnt {
+  width: 100%;
+  border-radius: 2rem;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: var(--fs10);
+  position: relative;
+  grid-column: auto / span 5;
+}
+
+.team-section .card-cnt .title,
+.all-team-section .card-cnt .title {
+  color: var(--bag-color-black-100);
+  font-weight: 500;
+  font-size: var(--fs42);
+  line-height: 1;
+}
+
+.team-section .card-cnt .dec,
+.all-team-section .card-cnt .dec {
+  color: var(--bag-color-red-100);
+  font-weight: 500;
+  font-size: var(--fs14);
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .team-section .card-cnt,
+  .all-team-section .card-cnt {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 2%;
+    gap: var(--fs14);
+    grid-column: auto / span 5;
+  }
+
+  .team-section .card-cnt .title,
+  .all-team-section .card-cnt .title {
+    font-size: var(--fs60);
+  }
+
+  .team-section .card-cnt .dec,
+  .all-team-section .card-cnt .dec {
+    font-size: var(--fs28);
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 340px) {
+}

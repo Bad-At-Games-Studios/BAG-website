@@ -1,0 +1,65 @@
+.team-section {
+  padding: 6%;
+  background-color: var(--bag-color-gray-20);
+}
+
+.team-section .team-section-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs8);
+}
+
+.team-section .team-section-top .eyebrow {
+  color: var(--bag-color-red-100);
+  font-size: var(--fs16);
+  font-weight: 600;
+}
+
+.team-section .team-section-top .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+.team-section .team-section-top .title-wrapper .title {
+  font-size: var(--fs70);
+  color: var(--bag-color-black-100);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.team-section .team-section-top .title-wrapper .dec {
+  width: 30%;
+  color: var(--bag-color-gray-100);
+  font-weight: 500;
+  font-size: var(--fs18);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.team-section .team-section-bottom {
+  display: grid;
+  grid-auto-flow: dense;
+  align-items: stretch;
+  justify-items: stretch;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 1rem;
+}
+
+.team-section .team-all-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-section .team-all-btn .view-all {
+  margin-top: 2%;
+  color: var(--bag-color-black-100);
+  font-size: var(--fs22);
+  font-weight: 500;
+}
+
+.team-section .team-all-btn .view-all:hover {
+  color: var(--bag-color-red-100);
+}

@@ -1,0 +1,459 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--bag-color-black-100);
+  /* box-shadow: 0px 1px 6px 0px rgba(237, 17, 28, 0.75); */
+  transform: translateY(0);
+  transition: transform 0.35s ease;
+}
+
+.navbar.navbar--hidden {
+  transform: translateY(-100%);
+}
+
+.navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4% 6%;
+}
+
+.navbar .nav-container .nav-left {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  gap: var(--fs20);
+}
+
+.navbar .nav-container .nav-left .nav-logo {
+  width: 10%;
+}
+
+.navbar .nav-container .nav-right {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: var(--fs20);
+}
+
+.navbar .nav-container .nav-right .nav-options {
+  display: flex;
+  align-items: center;
+  gap: var(--fs20);
+}
+
+.navbar .nav-container .nav-right .nav-options li {
+  position: relative;
+  font-weight: 600;
+  font-size: var(--fs16);
+}
+
+.navbar .nav-container .nav-right .nav-options li a {
+  position: relative;
+  display: inline-block;
+  color: var(--bag-color-white-100);
+  text-decoration: none;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-container .nav-right .nav-options li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--bag-color-red-100);
+  transform: translateX(-50%);
+  transition: width 0.35s ease;
+}
+
+.navbar .nav-container .nav-right .nav-options li a:hover {
+  color: var(--bag-color-red-100);
+}
+
+.navbar .nav-container .nav-right .nav-options li a:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-container .nav-right .nav-options li a.active::after {
+  width: 100%;
+}
+
+.navbar .nav-container .nav-right .contact-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 1.4% 2%;
+  border-radius: var(--fs24);
+  background-color: var(--bag-color-white-100);
+  color: var(--bag-color-black-100);
+  font-size: var(--fs14);
+  text-decoration: none;
+  overflow: hidden;
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    transform 0.3s ease;
+}
+
+.navbar .nav-container .nav-right .contact-btn:hover {
+  background-color: var(--bag-color-white-100);
+  color: var(--bag-color-red-100);
+}
+
+.navbar .nav-container .nav-right .contact-btn span {
+  display: inline-block;
+  transition: transform 0.35s ease;
+}
+
+.navbar .nav-container .nav-right .contact-btn:hover span {
+  transform: translate(4px, -4px);
+}
+
+.navbar .nav-container .nav-right .hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .navbar .nav-container {
+    padding: 1.4% 6%;
+  }
+
+  .navbar .nav-container .nav-left {
+    width: 30%;
+    gap: var(--fs20);
+  }
+
+  .navbar .nav-container .nav-left .nav-logo {
+    width: 14%;
+  }
+
+  .navbar .nav-container .nav-right {
+    width: 60%;
+    gap: var(--fs20);
+  }
+
+  .navbar .nav-container .nav-right .nav-options {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 95svh;
+    background-color: var(--bag-color-black-100);
+    gap: var(--fs20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(140%);
+    transition: all 0.5s ease;
+  }
+
+  .navbar .nav-container .nav-right .nav-options.open {
+    transform: translateX(0);
+  }
+
+  .navbar .nav-container .nav-right .nav-options li {
+    font-size: var(--fs56);
+  }
+
+  .navbar .nav-container .nav-right .nav-options li a {
+    padding: 5px 0;
+  }
+
+  .navbar .nav-container .nav-right .nav-options li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+  }
+
+  .navbar .nav-container .nav-right .contact-btn {
+    gap: 8px;
+    padding: 2% 4%;
+    border-radius: var(--fs36);
+    font-size: var(--fs22);
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+    gap: 0.4rem;
+    cursor: pointer;
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--bag-color-white-100);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu.open .bars:first-child {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu.open .bars:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-container {
+    padding: 1.4% 6%;
+  }
+
+  .navbar .nav-container .nav-left {
+    width: 30%;
+    gap: var(--fs20);
+  }
+
+  .navbar .nav-container .nav-left .nav-logo {
+    width: 18%;
+  }
+
+  .navbar .nav-container .nav-right {
+    width: 60%;
+    gap: var(--fs26);
+  }
+
+  .navbar .nav-container .nav-right .nav-options {
+    height: 95svh;
+    gap: var(--fs20);
+  }
+
+  .navbar .nav-container .nav-right .nav-options.open {
+    transform: translateX(0);
+  }
+
+  .navbar .nav-container .nav-right .nav-options li {
+    font-size: var(--fs56);
+  }
+
+  .navbar .nav-container .nav-right .nav-options li a {
+    padding: 5px 0;
+  }
+
+  .navbar .nav-container .nav-right .nav-options li a::after {
+    left: 50%;
+    height: 2px;
+  }
+
+  .navbar .nav-container .nav-right .contact-btn {
+    gap: 8px;
+    padding: 2% 4%;
+    border-radius: var(--fs36);
+    font-size: var(--fs22);
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu {
+    width: 6%;
+    gap: 0.4rem;
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu span {
+    width: 100%;
+    height: 2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .nav-container {
+    padding: 1.4% 6%;
+  }
+
+  .navbar .nav-container .nav-left {
+    width: 30%;
+    gap: var(--fs20);
+  }
+
+  .navbar .nav-container .nav-left .nav-logo {
+    width: 22%;
+  }
+
+  .navbar .nav-container .nav-right {
+    width: 60%;
+    gap: var(--fs26);
+  }
+
+  .navbar .nav-container .nav-right .nav-options {
+    height: 95svh;
+    gap: var(--fs20);
+  }
+
+  .navbar .nav-container .nav-right .nav-options.open {
+    transform: translateX(0);
+  }
+
+  .navbar .nav-container .nav-right .nav-options li {
+    font-size: var(--fs56);
+  }
+
+  .navbar .nav-container .nav-right .nav-options li a {
+    padding: 5px 0;
+  }
+
+  .navbar .nav-container .nav-right .nav-options li a::after {
+    left: 50%;
+    height: 2px;
+  }
+
+  .navbar .nav-container .nav-right .contact-btn {
+    gap: 8px;
+    padding: 2% 6%;
+    border-radius: var(--fs36);
+    font-size: var(--fs22);
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu {
+    width: 6%;
+    gap: 0.4rem;
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu span {
+    width: 100%;
+    height: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar .nav-container {
+    padding: 2% 6%;
+  }
+
+  .navbar .nav-container .nav-left {
+    width: 30%;
+    gap: var(--fs20);
+  }
+
+  .navbar .nav-container .nav-left .nav-logo {
+    width: 36%;
+  }
+
+  .navbar .nav-container .nav-right {
+    width: 60%;
+    gap: var(--fs26);
+  }
+
+  .navbar .nav-container .nav-right .nav-options {
+    height: 95svh;
+    gap: var(--fs20);
+  }
+
+  .navbar .nav-container .nav-right .nav-options.open {
+    transform: translateX(0);
+  }
+
+  .navbar .nav-container .nav-right .nav-options li {
+    font-size: var(--fs56);
+  }
+
+  .navbar .nav-container .nav-right .nav-options li a {
+    padding: 5px 0;
+  }
+
+  .navbar .nav-container .nav-right .nav-options li a::after {
+    left: 50%;
+    height: 2px;
+  }
+
+  .navbar .nav-container .nav-right .contact-btn {
+    gap: 8px;
+    padding: 4% 8%;
+    border-radius: var(--fs36);
+    font-size: var(--fs22);
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu {
+    width: 8%;
+    gap: 0.3rem;
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu span {
+    width: 100%;
+    height: 2px;
+  }
+}
+
+@media (max-width: 340px) {
+  .navbar .nav-container {
+    padding: 2% 6%;
+  }
+
+  .navbar .nav-container .nav-left {
+    width: 30%;
+    gap: var(--fs20);
+  }
+
+  .navbar .nav-container .nav-left .nav-logo {
+    width: 40%;
+  }
+
+  .navbar .nav-container .nav-right {
+    width: 60%;
+    gap: var(--fs16);
+  }
+
+  .navbar .nav-container .nav-right .nav-options {
+    height: 95svh;
+    gap: var(--fs20);
+  }
+
+  .navbar .nav-container .nav-right .nav-options.open {
+    transform: translateX(0);
+  }
+
+  .navbar .nav-container .nav-right .nav-options li {
+    font-size: var(--fs56);
+  }
+
+  .navbar .nav-container .nav-right .nav-options li a {
+    padding: 5px 0;
+  }
+
+  .navbar .nav-container .nav-right .nav-options li a::after {
+    left: 50%;
+    height: 2px;
+  }
+
+  .navbar .nav-container .nav-right .contact-btn {
+    gap: 8px;
+    padding: 4% 8%;
+    border-radius: var(--fs36);
+    font-size: var(--fs18);
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu {
+    width: 8%;
+    gap: 0.3rem;
+  }
+
+  .navbar .nav-container .nav-right .hamburger-menu span {
+    width: 100%;
+    height: 2px;
+  }
+}

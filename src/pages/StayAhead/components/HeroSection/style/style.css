@@ -1,0 +1,180 @@
+.sa-hero-section {
+  width: 100%;
+  height: 100svh;
+  background-image: url("../../../../../assets/images/stayahead/PosterStayahead.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0% 12%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sa-hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.sa-hero-section .eyebro {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sa-hero-section .eyebro .text {
+  color: var(--bag-color-loading-100);
+  font-size: var(--fs18);
+  position: relative;
+}
+
+.sa-hero-section .eyebro .brand {
+  color: var(--bag-color-gray-20);
+  font-size: var(--fs18);
+}
+
+.sa-hero-section .content {
+  position: relative;
+  z-index: 1;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sa-hero-section .content .title {
+  font-size: 8vw;
+  color: var(--bag-color-gray-20);
+  line-height: 1;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.sa-hero-section .content .title span {
+  color: var(--bag-color-white-100);
+}
+
+.sa-hero-section .content .subtitle {
+  font-size: var(--fs28);
+  color: var(--bag-color-gray-20);
+  width: 24%;
+}
+
+.sa-hero-section .content .btn {
+  background-color: var(--bag-color-white-100);
+  border-radius: 10px;
+  padding: 1% 2%;
+  text-align: center;
+  white-space: nowrap;
+  font-size: var(--fs18);
+  font-weight: 500;
+  color: var(--bag-color-red-100);
+  cursor: pointer;
+}
+
+.sa-hero-section .content .btn:hover {
+  color: var(--bag-color-white-100);
+  background-color: var(--bag-color-red-100);
+}
+
+.sa-hero-section .features {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs10);
+  color: var(--bag-color-gray-20);
+  font-size: var(--fs14);
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .sa-hero-section .eyebro .text {
+    font-size: var(--fs26);
+  }
+
+  .sa-hero-section .eyebro .brand {
+    font-size: var(--fs26);
+  }
+
+  .sa-hero-section .content {
+    margin-top: 2%;
+    gap: 2rem;
+  }
+
+  .sa-hero-section .content .title {
+    font-size: 12vw;
+  }
+
+  .sa-hero-section .content .subtitle {
+    font-size: var(--fs38);
+    width: 100%;
+  }
+
+  .sa-hero-section .content .btn {
+    border-radius: 10px;
+    padding: 1% 4%;
+    font-size: var(--fs32);
+  }
+
+  .sa-hero-section .features {
+    margin-top: 4%;
+    gap: var(--fs10);
+    font-size: var(--fs24);
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .sa-hero-section .eyebro {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: var(--fs18);
+  }
+
+  .sa-hero-section .content .title {
+    font-size: 16vw;
+  }
+
+  .sa-hero-section .content .btn {
+    padding: 1.5% 6%;
+    font-size: var(--fs28);
+  }
+}
+
+@media (max-width: 400px) {
+  .sa-hero-section .eyebro .brand,
+  .sa-hero-section .eyebro .text {
+    font-size: var(--fs22);
+  }
+
+  .sa-hero-section .content .subtitle {
+    font-size: var(--fs30);
+  }
+}
+
+@media (max-width: 340px) {
+}

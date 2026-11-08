@@ -1,0 +1,107 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  background-color: var(--bag-color-gray-20);
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.hero-section .hero-left {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--fs16);
+  z-index: 4;
+  background: #000000;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.hero-section .hero-left .hero-left-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs16);
+  width: 50%;
+}
+
+.hero-section .hero-left .hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--fs14);
+}
+
+.hero-section .hero-left .hero-eyebrow .line {
+  background-color: var(--bag-color-red-100);
+  height: 2px;
+  width: 2.5%;
+}
+
+.hero-section .hero-left .hero-eyebrow p {
+  color: var(--bag-color-red-100);
+  font-size: var(--fs16);
+  font-weight: 600;
+}
+
+.hero-section .hero-left .hero-title h1 {
+  color: var(--bag-color-white-100);
+  font-size: 6vw;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.hero-section .hero-left .hero-title h1 span {
+  color: var(--bag-color-red-100);
+}
+
+.hero-section .hero-left .hero-dec p {
+  width: 70%;
+  color: var(--bag-color-gray-20);
+  font-size: var(--fs20);
+}
+
+.hero-section .hero-left .hero-btn button {
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 2% 4%;
+  border-radius: var(--fs28);
+  background-color: var(--bag-color-red-100);
+  color: var(--bag-color-white-100);
+  font-size: var(--fs18);
+  text-decoration: none;
+  overflow: hidden;
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    transform 0.3s ease;
+}
+
+.hero-section .hero-left .hero-btn button:hover {
+  background-color: var(--bag-color-black-100);
+  color: var(--bag-color-white-100);
+}
+
+.hero-section .hero-right {
+  width: 100%;
+  height: 100svh;
+}
+
+.hero-section .hero-right .hero-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section .hero-right .hero-slider .badass-game-img,
+.hero-section .hero-right .hero-slider .badass-game-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

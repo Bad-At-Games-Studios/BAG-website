@@ -1,0 +1,142 @@
+.sa-core-section {
+  padding: 8% 12%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-bottom: 1px solid var(--bag-color-gray-100);
+}
+
+.sa-core-section .eyebro {
+  display: flex;
+  align-items: center;
+  gap: var(--fs12);
+}
+
+.sa-core-section .eyebro .line {
+  width: 2%;
+  height: 2px;
+  background: var(--bag-color-loading-100);
+}
+
+.sa-core-section .eyebro p {
+  color: var(--bag-color-loading-100);
+  font-size: var(--fs14);
+  line-height: 1;
+}
+
+.sa-core-section .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.sa-core-section .content .left {
+  width: 30%;
+}
+
+.sa-core-section .content .left h1 {
+  color: var(--bag-color-gray-20);
+  font-size: var(--fs70);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.sa-core-section .content .right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sa-core-section .content .right .dec {
+  color: var(--bag-color-gray-20);
+  font-size: var(--fs22);
+  line-height: 1;
+}
+
+.sa-core-section .content .right .sub-dec {
+  color: var(--bag-color-white-100);
+  font-size: var(--fs16);
+  line-height: 1;
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .sa-core-section {
+    gap: 2rem;
+  }
+
+  .sa-core-section .eyebro {
+    gap: var(--fs12);
+  }
+
+  .sa-core-section .eyebro .line {
+    width: 2%;
+    height: 2px;
+  }
+
+  .sa-core-section .eyebro p {
+    font-size: var(--fs22);
+  }
+
+  .sa-core-section .content .left {
+    width: 30%;
+  }
+
+  .sa-core-section .content .left h1 {
+    font-size: var(--fs80);
+  }
+
+  .sa-core-section .content .right {
+    width: 60%;
+    gap: 2rem;
+  }
+
+  .sa-core-section .content .right .dec {
+    font-size: var(--fs32);
+  }
+
+  .sa-core-section .content .right .sub-dec {
+    font-size: var(--fs26);
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .sa-core-section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: var(--fs24);
+  }
+
+  .sa-core-section .content .left {
+    width: 100%;
+  }
+
+  .sa-core-section .content .left h1 {
+    font-size: 10vw;
+  }
+
+  .sa-core-section .content .right {
+    width: 100%;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 340px) {
+}

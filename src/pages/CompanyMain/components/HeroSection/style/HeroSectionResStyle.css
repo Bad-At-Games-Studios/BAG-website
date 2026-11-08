@@ -1,0 +1,145 @@
+@import "./HeroSectionStyle.css";
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .hero-section .hero-left {
+    padding-left: 10%;
+    gap: var(--fs16);
+  }
+
+  .hero-section .hero-left .hero-left-wrapper {
+    gap: var(--fs22);
+    width: 60%;
+  }
+
+  .hero-section .hero-left .hero-eyebrow {
+    gap: var(--fs14);
+  }
+
+  .hero-section .hero-left .hero-eyebrow .line {
+    height: 2px;
+    width: 2.5%;
+  }
+
+  .hero-section .hero-left .hero-eyebrow p {
+    font-size: var(--fs24);
+  }
+
+  .hero-section .hero-left .hero-title h1 {
+    font-size: 8vw;
+  }
+
+  .hero-section .hero-left .hero-dec p {
+    width: 70%;
+    font-size: var(--fs30);
+  }
+
+  .hero-section .hero-left .hero-btn button {
+    padding: 2% 4%;
+    border-radius: var(--fs48);
+    font-size: var(--fs28);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section .hero-left {
+    padding-left: 10%;
+    gap: var(--fs16);
+  }
+
+  .hero-section .hero-left .hero-left-wrapper {
+    gap: var(--fs22);
+    width: 60%;
+  }
+
+  .hero-section .hero-left .hero-eyebrow {
+    gap: var(--fs14);
+  }
+
+  .hero-section .hero-left .hero-eyebrow .line {
+    height: 2px;
+    width: 2.5%;
+  }
+
+  .hero-section .hero-left .hero-eyebrow p {
+    font-size: var(--fs24);
+  }
+
+  .hero-section .hero-left .hero-title h1 {
+    font-size: 8vw;
+  }
+
+  .hero-section .hero-left .hero-dec p {
+    width: 70%;
+    font-size: var(--fs30);
+  }
+
+  .hero-section .hero-left .hero-btn button {
+    padding: 2.5% 6%;
+    border-radius: var(--fs48);
+    font-size: var(--fs28);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section .hero-left {
+    padding-left: 10%;
+    gap: var(--fs16);
+  }
+
+  .hero-section .hero-left .hero-left-wrapper {
+    gap: var(--fs22);
+    width: 100%;
+  }
+
+  .hero-section .hero-left .hero-eyebrow {
+    gap: var(--fs14);
+  }
+
+  .hero-section .hero-left .hero-eyebrow .line {
+    height: 2px;
+    width: 2.5%;
+  }
+
+  .hero-section .hero-left .hero-eyebrow p {
+    font-size: var(--fs24);
+  }
+
+  .hero-section .hero-left .hero-title h1 {
+    font-size: 14vw;
+  }
+
+  .hero-section .hero-left .hero-dec p {
+    width: 70%;
+    font-size: var(--fs30);
+  }
+
+  .hero-section .hero-left .hero-btn button {
+    padding: 2% 6%;
+    border-radius: var(--fs48);
+    font-size: var(--fs26);
+  }
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 340px) {
+  .hero-section .hero-left .hero-dec p {
+    width: 100%;
+    font-size: var(--fs28);
+  }
+  .hero-section .hero-left .hero-btn button {
+    padding: 2% 6%;
+    border-radius: var(--fs48);
+    font-size: var(--fs24);
+  }
+}
