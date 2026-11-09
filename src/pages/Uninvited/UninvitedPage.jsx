@@ -1,11 +1,10 @@
-import SEO from "../../components/Seo/SEO";
-
 import HeroSection from "./components/HeroSection/HeroSection";
 import ChapterSection from "./components/ChapterSection/ChapterSection";
 import GameplaySection from "./components/GameplaySection/GameplaySection";
 import ScreenshotSection from "./components/ScreenshotSection/ScreenshotSection";
 
 import "./style.css";
+import SEO from "../../components/SEOComp/SEO";
 
 const UninvitedPage = () => {
   return (

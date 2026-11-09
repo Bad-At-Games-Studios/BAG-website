@@ -1,10 +1,10 @@
-import SEO from "../../components/Seo/SEO";
 import CoreSection from "./components/CoreSection/CoreSection";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ZoneSection from "./components/ZoneSection/ZoneSection";
 import ScreenshotSection from "./components/ScreenshotSection/ScreenshotSection";
 
 import "./style.css";
+import SEO from "../../components/SEOComp/SEO";
 
 const StayAheadPage = () => {
   return (
