@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -95,6 +96,7 @@ function App() {
       >
         <Recaptcha />
         <Analytics />
+        <SpeedInsights />
         <RouterProvider router={router} />
       </GoogleReCaptchaProvider>
     </>
