@@ -1,39 +1,47 @@
 # BADAT Games
 
-> BADAT Games is a game development company website featuring information about its games, team, company, news, and related legal policies.
+> BADAT Games is an independent game development company focused on creating and publishing games. Its website provides information about its games, development team, company, news, announcements, and legal policies.
 
-## Website
+## Main Website
 
-- https://www.badatgames.net/ — BADAT Games home page and company overview
-- https://www.badatgames.net/game — All games developed or published by BADAT Games
-- https://www.badatgames.net/team — BADAT Games team members
-- https://www.badatgames.net/news — Latest BADAT Games news and updates
+- [Home](https://www.badatgames.net/): Company overview and introduction.
+- [Games](https://www.badatgames.net/game): Browse games developed or published by BADAT Games.
+- [Team](https://www.badatgames.net/team): Meet the BADAT Games team.
+- [News](https://www.badatgames.net/news): Latest company news, announcements, and updates.
 
 ## Games
 
-- https://www.badatgames.net/game — Browse all BADAT Games
-- https://www.badatgames.net/aboutgame/:name — Detailed information about an individual game
+- [All Games](https://www.badatgames.net/game): Explore the BADAT Games portfolio.
+- Individual game pages follow the URL pattern `/aboutgame/{name}` and contain detailed information about each game.
 
-## News
+## News and Announcements
 
-- https://www.badatgames.net/news — Browse BADAT Games news and announcements
-- https://www.badatgames.net/aboutnews/:id — Detailed information about a specific news article
+- [Latest News](https://www.badatgames.net/news): Browse company updates and announcements.
+- Individual news articles follow the URL pattern `/aboutnews/{id}`.
 
-## Company
+## Company Information
 
-- https://www.badatgames.net/ — BADAT Games company information
-- https://www.badatgames.net/team — Information about the BADAT Games team
+- [Home](https://www.badatgames.net/): Information about BADAT Games.
+- [Team](https://www.badatgames.net/team): Team members and their profiles.
 
-## Legal
+## Legal Information
 
-- https://www.badatgames.net/tc — Terms and Conditions
-- https://www.badatgames.net/pp — Privacy Policy
+- [Terms and Conditions](https://www.badatgames.net/tc)
+- [Privacy Policy](https://www.badatgames.net/pp)
 
-## Notes
+## Website Structure
 
-BADAT Games provides information about its games, company, team, and news through the website.
+The website uses React.js and Vite.
 
-Dynamic routes use the following patterns:
+Dynamic routes:
+- `/aboutgame/{name}` — Individual game details.
+- `/aboutnews/{id}` — Individual news articles.
 
-- `/aboutgame/:name` — Individual game pages
-- `/aboutnews/:id` — Individual news pages
+## Additional Resources
+
+- [Sitemap](https://www.badatgames.net/sitemap.xml)
+- [Robots.txt](https://www.badatgames.net/robots.txt)
+
+## Content Guidelines
+
+The website is the primary source for official BADAT Games information, including game descriptions, company details, team information, announcements, and policies.

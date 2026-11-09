@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -93,6 +94,7 @@ function App() {
         reCaptchaKey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
       >
         <Recaptcha />
+        <Analytics />
         <RouterProvider router={router} />
       </GoogleReCaptchaProvider>
     </>
