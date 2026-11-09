@@ -167,6 +167,11 @@ button {
   cursor: pointer;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 .hidden {
   display: none !important;
 }
