@@ -1,4 +1,5 @@
 import SEO from "../../components/Seo/SEO";
+
 import HeroSection from "./components/HeroSection/HeroSection";
 import ChapterSection from "./components/ChapterSection/ChapterSection";
 import GameplaySection from "./components/GameplaySection/GameplaySection";

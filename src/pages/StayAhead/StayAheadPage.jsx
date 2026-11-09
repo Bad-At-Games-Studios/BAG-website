@@ -9,7 +9,6 @@ import "./style.css";
 const StayAheadPage = () => {
   return (
     <>
-      {/* seo */}
       <SEO
         title="Stay Ahead – Endless Runner Reaction Game"
         description="Test your reflexes in Stay Ahead, a minimalist endless runner by BAD AT Games. Recognize patterns, balance speed and risk, and push your run further."

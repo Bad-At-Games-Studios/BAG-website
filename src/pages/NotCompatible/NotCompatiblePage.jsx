@@ -1,4 +1,5 @@
 import SEO from "../../components/Seo/SEO";
+
 import NcHeroSection from "./components/NcHeroSection/NcHeroSection";
 import NcGamePlaySection from "./components/NcGamePlaySection/NcGamePlaySection";
 import NcScreenshotsSection from "./components/NcScreenshotsSection/NcScreenshotsSection";
