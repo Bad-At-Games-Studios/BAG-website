@@ -1,0 +1,90 @@
+
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "BAD AT Games",
+    "identifier": "did:web:badatgames.net",
+    "documentationUrl": "https://www.badatgames.net/",
+    "logoUrl": "https://www.badatgames.net/"
+  },
+  "entries": [],
+  "extensions": {
+    "com.badatgames.website": {
+      "name": "BAD AT Games",
+      "alternateName": "BADAT Games",
+      "website": "https://www.badatgames.net/",
+      "description": "BAD AT Games is an independent game development studio creating original intellectual property, developing games, and collaborating with other studios through co-development and full game production.",
+      "businessType": "Independent Game Development Studio",
+      "industry": [
+        "Video Games",
+        "Game Development",
+        "Interactive Entertainment",
+        "Game Production"
+      ],
+      "services": [
+        {
+          "name": "Original Game Development",
+          "description": "Conceptualizing, designing, developing, and producing original video games and intellectual property."
+        },
+        {
+          "name": "Co-Development",
+          "description": "Collaborating with other game studios and development teams to build and deliver video games."
+        },
+        {
+          "name": "Full Game Production",
+          "description": "Developing complete game projects from initial concepts through production and delivery."
+        }
+      ],
+      "platforms": [
+        "PC",
+        "Other platforms as supported by individual games"
+      ],
+      "games": [
+        {
+          "name": "Uninvited",
+          "website": "https://www.badatgames.net/"
+        },
+        {
+          "name": "Stay Ahead",
+          "website": "https://www.badatgames.net/"
+        },
+        {
+          "name": "Not Compatible",
+          "website": "https://www.badatgames.net/"
+        }
+      ],
+      "websiteSections": [
+        {
+          "name": "Home",
+          "url": "https://www.badatgames.net/"
+        },
+        {
+          "name": "Games",
+          "url": "https://www.badatgames.net/game"
+        },
+        {
+          "name": "Team",
+          "url": "https://www.badatgames.net/team"
+        }
+      ],
+      "contentTypes": [
+        "Game Announcements",
+        "Game News",
+        "Gameplay Information",
+        "Screenshots",
+        "Studio Information",
+        "Team Information"
+      ],
+      "socialProfiles": [],
+      "contact": {
+        "website": "https://www.badatgames.net/"
+      },
+      "discovery": {
+        "llmsTxt": "https://www.badatgames.net/llms.txt",
+        "robotsTxt": "https://www.badatgames.net/robots.txt",
+        "sitemap": "https://www.badatgames.net/sitemap.xml",
+        "aiCatalog": "https://www.badatgames.net/.well-known/ai-catalog.json"
+      }
+    }
+  }
+}
